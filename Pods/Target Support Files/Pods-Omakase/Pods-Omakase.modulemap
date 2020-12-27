@@ -1,0 +1,6 @@
+framework module Pods_Omakase {
+  umbrella header "Pods-Omakase-umbrella.h"
+
+  export *
+  module * { export * }
+}

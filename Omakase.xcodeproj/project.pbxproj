@@ -14,9 +14,13 @@
 		51AF3AB125986C71000FC848 /* Omakase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51AF3AAF25986C71000FC848 /* Omakase.xcdatamodeld */; };
 		51AF3AB325986C74000FC848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51AF3AB225986C74000FC848 /* Assets.xcassets */; };
 		51AF3AB625986C74000FC848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AF3AB425986C74000FC848 /* LaunchScreen.storyboard */; };
+		91DBC5486820803AB886A5B7 /* Pods_Omakase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FBA7849B4C56FE517CE625 /* Pods_Omakase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20FBA7849B4C56FE517CE625 /* Pods_Omakase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omakase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DE502118ACC0200C18A6E4 /* Pods-Omakase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omakase.release.xcconfig"; path = "Target Support Files/Pods-Omakase/Pods-Omakase.release.xcconfig"; sourceTree = "<group>"; };
+		4B5D98084D4F3CD9ED7D33EE /* Pods-Omakase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omakase.debug.xcconfig"; path = "Target Support Files/Pods-Omakase/Pods-Omakase.debug.xcconfig"; sourceTree = "<group>"; };
 		51AF3AA325986C70000FC848 /* Omakase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Omakase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AF3AA625986C70000FC848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51AF3AA825986C70000FC848 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DBC5486820803AB886A5B7 /* Pods_Omakase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19CF1439609D48261CD08981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20FBA7849B4C56FE517CE625 /* Pods_Omakase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A2F6424F90FFF618BDDEBE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B5D98084D4F3CD9ED7D33EE /* Pods-Omakase.debug.xcconfig */,
+				35DE502118ACC0200C18A6E4 /* Pods-Omakase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		51AF3A9A25986C70000FC848 = {
 			isa = PBXGroup;
 			children = (
 				51AF3AA525986C70000FC848 /* Omakase */,
 				51AF3AA425986C70000FC848 /* Products */,
+				2A2F6424F90FFF618BDDEBE1 /* Pods */,
+				19CF1439609D48261CD08981 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51AF3ABA25986C74000FC848 /* Build configuration list for PBXNativeTarget "Omakase" */;
 			buildPhases = (
+				829856A001A495D80EFE4E38 /* [CP] Check Pods Manifest.lock */,
 				51AF3A9F25986C70000FC848 /* Sources */,
 				51AF3AA025986C70000FC848 /* Frameworks */,
 				51AF3AA125986C70000FC848 /* Resources */,
+				E5B42B67091D004EF2F51E3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		829856A001A495D80EFE4E38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Omakase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5B42B67091D004EF2F51E3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Omakase/Pods-Omakase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Omakase/Pods-Omakase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Omakase/Pods-Omakase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51AF3A9F25986C70000FC848 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		51AF3ABB25986C74000FC848 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5D98084D4F3CD9ED7D33EE /* Pods-Omakase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +376,7 @@
 		};
 		51AF3ABC25986C74000FC848 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35DE502118ACC0200C18A6E4 /* Pods-Omakase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
