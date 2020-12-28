@@ -3,17 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		51AF3AA725986C70000FC848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF3AA625986C70000FC848 /* AppDelegate.swift */; };
 		51AF3AA925986C70000FC848 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF3AA825986C70000FC848 /* SceneDelegate.swift */; };
-		51AF3AAB25986C70000FC848 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF3AAA25986C70000FC848 /* ViewController.swift */; };
-		51AF3AAE25986C70000FC848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AF3AAC25986C70000FC848 /* Main.storyboard */; };
 		51AF3AB125986C71000FC848 /* Omakase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51AF3AAF25986C71000FC848 /* Omakase.xcdatamodeld */; };
 		51AF3AB325986C74000FC848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51AF3AB225986C74000FC848 /* Assets.xcassets */; };
 		51AF3AB625986C74000FC848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AF3AB425986C74000FC848 /* LaunchScreen.storyboard */; };
+		51C1D4B425998321009D673F /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1D4B325998321009D673F /* CGFloat+Extensions.swift */; };
+		51C1D4B8259983A7009D673F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1D4B7259983A7009D673F /* Constants.swift */; };
+		51C1D4BB2599851F009D673F /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1D4BA2599851F009D673F /* Int+Extensions.swift */; };
+		51C1D4C425998607009D673F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1D4C325998607009D673F /* LoginViewController.swift */; };
+		51C1D4D625998884009D673F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1D4D525998884009D673F /* UIColor+Extensions.swift */; };
+		51C1D4DA25998B91009D673F /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51C1D4D925998B91009D673F /* Karla-Bold.ttf */; };
+		51C1D4DD25998B9B009D673F /* BubblegumSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51C1D4DC25998B9B009D673F /* BubblegumSans-Regular.ttf */; };
+		51C1D4E025998C2E009D673F /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1D4DF25998C2E009D673F /* UIFont+Extensions.swift */; };
+		51C1D4E5259996A9009D673F /* Omakase Logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 51C1D4E4259996A9009D673F /* Omakase Logo.svg */; };
+		51D2509125999A1B00DFF18B /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D2509025999A1B00DFF18B /* LoginTextField.swift */; };
+		51D250952599A11100DFF18B /* Email Icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 51D250942599A11100DFF18B /* Email Icon.svg */; };
+		51D250982599A11700DFF18B /* Phone Icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 51D250972599A11700DFF18B /* Phone Icon.svg */; };
+		51D2509B2599A4C200DFF18B /* RectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D2509A2599A4C200DFF18B /* RectangleButton.swift */; };
 		91DBC5486820803AB886A5B7 /* Pods_Omakase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FBA7849B4C56FE517CE625 /* Pods_Omakase.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,12 +35,23 @@
 		51AF3AA325986C70000FC848 /* Omakase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Omakase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AF3AA625986C70000FC848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51AF3AA825986C70000FC848 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		51AF3AAA25986C70000FC848 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		51AF3AAD25986C70000FC848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51AF3AB025986C71000FC848 /* Omakase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Omakase.xcdatamodel; sourceTree = "<group>"; };
 		51AF3AB225986C74000FC848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51AF3AB525986C74000FC848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51AF3AB725986C74000FC848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51C1D4B325998321009D673F /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		51C1D4B7259983A7009D673F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		51C1D4BA2599851F009D673F /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		51C1D4C325998607009D673F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		51C1D4D525998884009D673F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		51C1D4D925998B91009D673F /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Bold.ttf"; sourceTree = "<group>"; };
+		51C1D4DC25998B9B009D673F /* BubblegumSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BubblegumSans-Regular.ttf"; sourceTree = "<group>"; };
+		51C1D4DF25998C2E009D673F /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		51C1D4E4259996A9009D673F /* Omakase Logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Omakase Logo.svg"; sourceTree = "<group>"; };
+		51D2509025999A1B00DFF18B /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		51D250942599A11100DFF18B /* Email Icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Email Icon.svg"; sourceTree = "<group>"; };
+		51D250972599A11700DFF18B /* Phone Icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Phone Icon.svg"; sourceTree = "<group>"; };
+		51D2509A2599A4C200DFF18B /* RectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +80,6 @@
 				4B5D98084D4F3CD9ED7D33EE /* Pods-Omakase.debug.xcconfig */,
 				35DE502118ACC0200C18A6E4 /* Pods-Omakase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,14 +106,65 @@
 			children = (
 				51AF3AA625986C70000FC848 /* AppDelegate.swift */,
 				51AF3AA825986C70000FC848 /* SceneDelegate.swift */,
-				51AF3AAA25986C70000FC848 /* ViewController.swift */,
-				51AF3AAC25986C70000FC848 /* Main.storyboard */,
+				51C1D4CE2599869F009D673F /* Controllers */,
+				51C1D4D825998AFC009D673F /* Fonts */,
+				51C1D4E3259996A1009D673F /* SVGs */,
+				51C1D4B2259982FC009D673F /* Utilities */,
+				51D2508F259999B600DFF18B /* Views */,
 				51AF3AB225986C74000FC848 /* Assets.xcassets */,
 				51AF3AB425986C74000FC848 /* LaunchScreen.storyboard */,
 				51AF3AB725986C74000FC848 /* Info.plist */,
 				51AF3AAF25986C71000FC848 /* Omakase.xcdatamodeld */,
 			);
 			path = Omakase;
+			sourceTree = "<group>";
+		};
+		51C1D4B2259982FC009D673F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				51C1D4B7259983A7009D673F /* Constants.swift */,
+				51C1D4B325998321009D673F /* CGFloat+Extensions.swift */,
+				51C1D4BA2599851F009D673F /* Int+Extensions.swift */,
+				51C1D4D525998884009D673F /* UIColor+Extensions.swift */,
+				51C1D4DF25998C2E009D673F /* UIFont+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		51C1D4CE2599869F009D673F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				51C1D4C325998607009D673F /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		51C1D4D825998AFC009D673F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				51C1D4DC25998B9B009D673F /* BubblegumSans-Regular.ttf */,
+				51C1D4D925998B91009D673F /* Karla-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		51C1D4E3259996A1009D673F /* SVGs */ = {
+			isa = PBXGroup;
+			children = (
+				51D250942599A11100DFF18B /* Email Icon.svg */,
+				51D250972599A11700DFF18B /* Phone Icon.svg */,
+				51C1D4E4259996A9009D673F /* Omakase Logo.svg */,
+			);
+			path = SVGs;
+			sourceTree = "<group>";
+		};
+		51D2508F259999B600DFF18B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51D2509025999A1B00DFF18B /* LoginTextField.swift */,
+				51D2509A2599A4C200DFF18B /* RectangleButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +226,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D250982599A11700DFF18B /* Phone Icon.svg in Resources */,
+				51C1D4E5259996A9009D673F /* Omakase Logo.svg in Resources */,
+				51C1D4DA25998B91009D673F /* Karla-Bold.ttf in Resources */,
 				51AF3AB625986C74000FC848 /* LaunchScreen.storyboard in Resources */,
+				51C1D4DD25998B9B009D673F /* BubblegumSans-Regular.ttf in Resources */,
 				51AF3AB325986C74000FC848 /* Assets.xcassets in Resources */,
-				51AF3AAE25986C70000FC848 /* Main.storyboard in Resources */,
+				51D250952599A11100DFF18B /* Email Icon.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,24 +285,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51AF3AAB25986C70000FC848 /* ViewController.swift in Sources */,
+				51C1D4B425998321009D673F /* CGFloat+Extensions.swift in Sources */,
 				51AF3AB125986C71000FC848 /* Omakase.xcdatamodeld in Sources */,
 				51AF3AA725986C70000FC848 /* AppDelegate.swift in Sources */,
+				51C1D4D625998884009D673F /* UIColor+Extensions.swift in Sources */,
+				51C1D4C425998607009D673F /* LoginViewController.swift in Sources */,
+				51D2509B2599A4C200DFF18B /* RectangleButton.swift in Sources */,
+				51C1D4BB2599851F009D673F /* Int+Extensions.swift in Sources */,
+				51C1D4B8259983A7009D673F /* Constants.swift in Sources */,
+				51C1D4E025998C2E009D673F /* UIFont+Extensions.swift in Sources */,
 				51AF3AA925986C70000FC848 /* SceneDelegate.swift in Sources */,
+				51D2509125999A1B00DFF18B /* LoginTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		51AF3AAC25986C70000FC848 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				51AF3AAD25986C70000FC848 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		51AF3AB425986C74000FC848 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,10 +442,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = GPO.Omakase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GPO.Omakase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -387,10 +462,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = GPO.Omakase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GPO.Omakase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
