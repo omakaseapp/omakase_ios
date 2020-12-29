@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SVGKit
 import PhoneNumberKit
 
 class LoginTextField: UIView {
@@ -37,9 +36,9 @@ class LoginTextField: UIView {
         return field
     }()
     
-    private lazy var icon: SVGKFastImageView = {
-        let iconName = config == .phone ? "Phone Icon" : "Email Icon"
-        let imageView = SVGKFastImageView(svgkImage: SVGKImage(named: iconName))!
+    private lazy var icon: UIImageView = {
+        let iconName = config == .phone ? "Phone Icon" : "Mail Icon"
+        let imageView = UIImageView(image: UIImage(named: iconName))
         return imageView
     }()
     

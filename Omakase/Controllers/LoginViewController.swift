@@ -6,14 +6,13 @@
 //
 
 import UIKit
-import SVGKit
 import SnapKit
 
 class LoginViewController: UIViewController, UITextViewDelegate {
     
     // MARK: Subviews
-    private lazy var logoImageView: SVGKFastImageView = {
-        let imageView = SVGKFastImageView(svgkImage: SVGKImage(named: "Omakase Logo"))!
+    private lazy var logoImageView: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "Omakase Logo"))
         return imageView
     }()
     
