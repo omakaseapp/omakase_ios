@@ -151,7 +151,7 @@ extension GroupsViewController: UICollectionViewDataSource, UICollectionViewDele
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GroupCollectionViewCell.reuseIdentifier, for: indexPath) as! GroupCollectionViewCell
         let row = indexPath.row
         let group = groups[row]
-        cell.configure(emoji: group.emoji ?? "👀", groupName: group.name ?? "<missing group name>", members: group.members!.array as? [Friend] ?? [Friend]())
+        cell.configure(group: group)
         return cell
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5101D4D825A44B9200EDA380 /* FriendPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5101D4D725A44B9200EDA380 /* FriendPhotoCollectionViewCell.swift */; };
 		510C0FAE25A4102400F13866 /* GroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0FAD25A4102400F13866 /* GroupCollectionViewCell.swift */; };
 		510C0FB125A4149A00F13866 /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 510C0FB025A4149A00F13866 /* Karla-Regular.ttf */; };
 		510C0FC025A422A100F13866 /* GroupsReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0FBF25A422A100F13866 /* GroupsReusableHeaderView.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		018C8F92F35EA56F6F733A38 /* Pods_Omakase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omakase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6FF0D626752F4CC6961E0D /* Pods-Omakase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omakase.debug.xcconfig"; path = "Target Support Files/Pods-Omakase/Pods-Omakase.debug.xcconfig"; sourceTree = "<group>"; };
+		5101D4D725A44B9200EDA380 /* FriendPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		510C0FAD25A4102400F13866 /* GroupCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCollectionViewCell.swift; sourceTree = "<group>"; };
 		510C0FB025A4149A00F13866 /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
 		510C0FBF25A422A100F13866 /* GroupsReusableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsReusableHeaderView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				510C0FAD25A4102400F13866 /* GroupCollectionViewCell.swift */,
+				5101D4D725A44B9200EDA380 /* FriendPhotoCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				51C1D4BB2599851F009D673F /* Int+Extensions.swift in Sources */,
 				51C1D4B8259983A7009D673F /* Constants.swift in Sources */,
 				510C0FD325A4430500F13866 /* Group+CoreDataClass.swift in Sources */,
+				5101D4D825A44B9200EDA380 /* FriendPhotoCollectionViewCell.swift in Sources */,
 				51C1D4E025998C2E009D673F /* UIFont+Extensions.swift in Sources */,
 				510C0FD425A4430500F13866 /* Group+CoreDataProperties.swift in Sources */,
 				51AF3AA925986C70000FC848 /* SceneDelegate.swift in Sources */,

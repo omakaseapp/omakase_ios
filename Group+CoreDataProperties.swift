@@ -16,8 +16,8 @@ extension Group {
         return NSFetchRequest<Group>(entityName: "Group")
     }
 
-    @NSManaged public var name: String?
     @NSManaged public var emoji: String?
+    @NSManaged public var name: String?
     @NSManaged public var members: NSOrderedSet?
 
 }

@@ -42,7 +42,21 @@ class GroupCollectionViewCell: UICollectionViewCell {
     }()
     
     // member profile pics
-    
+    private lazy var membersCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 30.adjustedHeight, height: 30.adjustedHeight)
+        layout.minimumInteritemSpacing = 3.adjustedWidth
+        
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(FriendPhotoCollectionViewCell.self, forCellWithReuseIdentifier: FriendPhotoCollectionViewCell.reuseIdentifier)
+        collectionView.backgroundColor = .clear
+        collectionView.isScrollEnabled = false
+        
+        return collectionView
+    }()
     
     // online status
     private lazy var onlineStatusBar: UIView = {
@@ -52,9 +66,7 @@ class GroupCollectionViewCell: UICollectionViewCell {
     
     // MARK: Vars & Constants
     
-    private var emoji: String!
-    private var groupName: String!
-    private var members: [Friend]!
+    private var group: Group!
     private var isOnline: Bool!
     
     // MARK: Init & Layout
@@ -75,6 +87,7 @@ class GroupCollectionViewCell: UICollectionViewCell {
             emojiLabel,
             groupNameLabel,
             memberCountLabel,
+            membersCollectionView,
             onlineStatusBar
         ] { contentView.addSubview(subview) }
         setConstraints()
@@ -97,24 +110,45 @@ class GroupCollectionViewCell: UICollectionViewCell {
             make.leading.equalToSuperview().offset(leadingOffset)
             make.trailing.equalTo(groupNameLabel)
         }
+        membersCollectionView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(96.adjustedHeight)
+            make.leading.equalToSuperview().offset(leadingOffset)
+            make.height.equalTo(32.adjustedHeight)
+            make.trailing.equalToSuperview().inset(15.adjustedWidth)
+        }
         onlineStatusBar.snp.makeConstraints { make in
             make.top.bottom.trailing.equalToSuperview()
             make.width.equalTo(15.adjustedWidth)
         }
     }
     
-    public func configure(emoji: String, groupName: String, members: [Friend], isOnline: Bool = false) {
-        self.emoji = emoji
-        self.groupName = groupName
-        self.members = members
+    public func configure(group: Group, isOnline: Bool = false) {
+        self.group = group
         self.isOnline = isOnline
-        emojiLabel.text = emoji
-        groupNameLabel.text = groupName
-        memberCountLabel.text = "\(members.count) member\(members.count > 1 ? "s" : "")"
+        emojiLabel.text = group.emoji
+        groupNameLabel.text = group.name
+        let membersCount = group.members?.count ?? 0
+        memberCountLabel.text = "\(membersCount) member\(membersCount > 1 ? "s" : "")"
         onlineStatusBar.backgroundColor = isOnline ? UIColor.onlineGreen : UIColor.omakaseBlack
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+extension GroupCollectionViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return group.members?.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FriendPhotoCollectionViewCell.reuseIdentifier, for: indexPath) as! FriendPhotoCollectionViewCell
+        let friend = group.members?[indexPath.row] as! Friend
+        let image = UIImage(data: friend.profilePhotoData!) ?? UIImage(named: "Omakase Logo")!
+        cell.configure(image: image)
+        return cell
+    }
+    
+    
 }
