@@ -24,6 +24,7 @@ extension UIColor {
     static var omakaseSalmon = UIColor(hex: 0xFFAF9F)
     static var omakaseBlack = UIColor(hex: 0x262626)
     static var hyperlinkBlue = UIColor(hex: 0x64B2F9)
+    static var onlineGreen = UIColor(hex: 0xA2CB94)
     
     func image() -> UIImage {
         let size = CGSize(width: 1, height: 1)
