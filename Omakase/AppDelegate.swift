@@ -7,14 +7,27 @@
 
 import UIKit
 import CoreData
+import Amplify
+import AmplifyPlugins
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    func configureAmplify() {
+        let dataStorePlugin = AWSDataStorePlugin(modelRegistration: AmplifyModels())
+        do {
+            try Amplify.add(plugin: dataStorePlugin)
+            try Amplify.configure()
+            Amplify.Logging.logLevel = .info
+            print("Initialized Amplify")
+        } catch {
+            print("Could not initialize Amplify:  \(error.localizedDescription)")
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        configureAmplify()
         return true
     }
 

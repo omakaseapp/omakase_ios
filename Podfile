@@ -8,6 +8,9 @@ target 'Omakase' do
   # Pods for Omakase
   pod 'SnapKit'
   pod 'PhoneNumberKit'
+  pod 'Amplify'
+  pod 'AmplifyPlugins/AWSAPIPlugin'
+  pod 'AmplifyPlugins/AWSDataStorePlugin'
 
 end
 
