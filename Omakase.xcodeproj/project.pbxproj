@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CAEA9CD08C2EBA331484D69 /* Pods_Omakase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2353A3C31377BDA4DAE9CE6D /* Pods_Omakase.framework */; };
 		5101D4D825A44B9200EDA380 /* FriendPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5101D4D725A44B9200EDA380 /* FriendPhotoCollectionViewCell.swift */; };
 		510C0FAE25A4102400F13866 /* GroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0FAD25A4102400F13866 /* GroupCollectionViewCell.swift */; };
 		510C0FB125A4149A00F13866 /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 510C0FB025A4149A00F13866 /* Karla-Regular.ttf */; };
@@ -33,20 +34,11 @@
 		51C1D4E025998C2E009D673F /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1D4DF25998C2E009D673F /* UIFont+Extensions.swift */; };
 		51D2509125999A1B00DFF18B /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D2509025999A1B00DFF18B /* LoginTextField.swift */; };
 		51D2509B2599A4C200DFF18B /* RectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D2509A2599A4C200DFF18B /* RectangleButton.swift */; };
-		5645B3055D3B471C8E239A24 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F677C79CF4F45058354D065 /* amplifyconfiguration.json */; };
-		E70DC29D73844073883FA95D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C31CBAA7B4F04307B4809E9F /* awsconfiguration.json */; };
-		F0DFDF850D5EBC14BD54CA51 /* Pods_Omakase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018C8F92F35EA56F6F733A38 /* Pods_Omakase.framework */; };
-		1FFBC54042E845FB95692935 /* AmplifyFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70907F5A61DC4D97BC47E3CF /* AmplifyFriend.swift */; };
-		AB0916E7A0394C9D8968AD62 /* AmplifyFriend+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5158D0833B4B2EB33EC1E7 /* AmplifyFriend+Schema.swift */; };
-		8D9E4A52DC784573A8630925 /* AmplifyGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1E2B6FB8F645DEAA0F2AE9 /* AmplifyGroup.swift */; };
-		8D0EC4EFD63A4C648F14420B /* AmplifyGroup+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = D897D1D9A6B840A2936DB846 /* AmplifyGroup+Schema.swift */; };
-		A57A90A553A14490B4D20D82 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F19DDF544045B18494BBDE /* AmplifyModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		018C8F92F35EA56F6F733A38 /* Pods_Omakase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omakase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13D7CA463A1E40E39DE15EA2 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/amplifyDatasource/schema.graphql; sourceTree = "<group>"; };
-		1B6FF0D626752F4CC6961E0D /* Pods-Omakase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omakase.debug.xcconfig"; path = "Target Support Files/Pods-Omakase/Pods-Omakase.debug.xcconfig"; sourceTree = "<group>"; };
+		20C98AC96606B0E6E7DFD03C /* Pods-Omakase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omakase.release.xcconfig"; path = "Target Support Files/Pods-Omakase/Pods-Omakase.release.xcconfig"; sourceTree = "<group>"; };
+		2353A3C31377BDA4DAE9CE6D /* Pods_Omakase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omakase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5101D4D725A44B9200EDA380 /* FriendPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		510C0FAD25A4102400F13866 /* GroupCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCollectionViewCell.swift; sourceTree = "<group>"; };
 		510C0FB025A4149A00F13866 /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
@@ -75,15 +67,7 @@
 		51C1D4DF25998C2E009D673F /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		51D2509025999A1B00DFF18B /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		51D2509A2599A4C200DFF18B /* RectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButton.swift; sourceTree = "<group>"; };
-		6F677C79CF4F45058354D065 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
-		C23DBA2555B148C0B9FFC0C1 /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
-		C31CBAA7B4F04307B4809E9F /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
-		EFAD970204709104EE61F2E2 /* Pods-Omakase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omakase.release.xcconfig"; path = "Target Support Files/Pods-Omakase/Pods-Omakase.release.xcconfig"; sourceTree = "<group>"; };
-		70907F5A61DC4D97BC47E3CF /* AmplifyFriend.swift */ = {isa = PBXFileReference; name = "AmplifyFriend.swift"; path = "amplify/generated/models/AmplifyFriend.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
-		6F5158D0833B4B2EB33EC1E7 /* AmplifyFriend+Schema.swift */ = {isa = PBXFileReference; name = "AmplifyFriend+Schema.swift"; path = "amplify/generated/models/AmplifyFriend+Schema.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
-		1F1E2B6FB8F645DEAA0F2AE9 /* AmplifyGroup.swift */ = {isa = PBXFileReference; name = "AmplifyGroup.swift"; path = "amplify/generated/models/AmplifyGroup.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
-		D897D1D9A6B840A2936DB846 /* AmplifyGroup+Schema.swift */ = {isa = PBXFileReference; name = "AmplifyGroup+Schema.swift"; path = "amplify/generated/models/AmplifyGroup+Schema.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
-		46F19DDF544045B18494BBDE /* AmplifyModels.swift */ = {isa = PBXFileReference; name = "AmplifyModels.swift"; path = "amplify/generated/models/AmplifyModels.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		949790BB144B52814D20532D /* Pods-Omakase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omakase.debug.xcconfig"; path = "Target Support Files/Pods-Omakase/Pods-Omakase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0DFDF850D5EBC14BD54CA51 /* Pods_Omakase.framework in Frameworks */,
+				2CAEA9CD08C2EBA331484D69 /* Pods_Omakase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +85,8 @@
 		2A2F6424F90FFF618BDDEBE1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1B6FF0D626752F4CC6961E0D /* Pods-Omakase.debug.xcconfig */,
-				EFAD970204709104EE61F2E2 /* Pods-Omakase.release.xcconfig */,
+				949790BB144B52814D20532D /* Pods-Omakase.debug.xcconfig */,
+				20C98AC96606B0E6E7DFD03C /* Pods-Omakase.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -130,12 +114,10 @@
 		51AF3A9A25986C70000FC848 = {
 			isa = PBXGroup;
 			children = (
-				6B592A63A5C941D58108F4C9 /* AmplifyModels */,
-				6FA0B4F0702D4174A6E64A51 /* AmplifyConfig */,
 				51AF3AA525986C70000FC848 /* Omakase */,
 				51AF3AA425986C70000FC848 /* Products */,
 				2A2F6424F90FFF618BDDEBE1 /* Pods */,
-				C9C0091C86E3AE28F0045E2D /* Frameworks */,
+				C75B7610A3A80FD6C07DF5EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,45 +191,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		6FA0B4F0702D4174A6E64A51 /* AmplifyConfig */ = {
+		C75B7610A3A80FD6C07DF5EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C23DBA2555B148C0B9FFC0C1 /* amplifytools.xcconfig */,
-				6F677C79CF4F45058354D065 /* amplifyconfiguration.json */,
-				C31CBAA7B4F04307B4809E9F /* awsconfiguration.json */,
-				13D7CA463A1E40E39DE15EA2 /* schema.graphql */,
-			);
-			name = AmplifyConfig;
-			path = .;
-			sourceTree = "<group>";
-		};
-		C9C0091C86E3AE28F0045E2D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				018C8F92F35EA56F6F733A38 /* Pods_Omakase.framework */,
+				2353A3C31377BDA4DAE9CE6D /* Pods_Omakase.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6B592A63A5C941D58108F4C9 /* AmplifyModels */ = {
-			isa = PBXGroup;
-			children = (
-				70907F5A61DC4D97BC47E3CF /* AmplifyFriend.swift */,
-				6F5158D0833B4B2EB33EC1E7 /* AmplifyFriend+Schema.swift */,
-				1F1E2B6FB8F645DEAA0F2AE9 /* AmplifyGroup.swift */,
-				D897D1D9A6B840A2936DB846 /* AmplifyGroup+Schema.swift */,
-				46F19DDF544045B18494BBDE /* AmplifyModels.swift */,
-			);
-			name = AmplifyModels;
-			path = .;
-			sourceTree = "<group>";
-		};
-		30D5F1169EBB4A0BA61A89DF /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
-			path = undefined;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,11 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51AF3ABA25986C74000FC848 /* Build configuration list for PBXNativeTarget "Omakase" */;
 			buildPhases = (
-				CFB9713925C5859347BCAAF7 /* [CP] Check Pods Manifest.lock */,
+				C3459F03D898EC1BE5E87BE1 /* [CP] Check Pods Manifest.lock */,
 				51AF3A9F25986C70000FC848 /* Sources */,
 				51AF3AA025986C70000FC848 /* Frameworks */,
 				51AF3AA125986C70000FC848 /* Resources */,
-				BCDCB750AD55E4F985A3BB79 /* [CP] Embed Pods Frameworks */,
+				94B1DC428A1A3ADD43885F50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -314,15 +263,13 @@
 				510C0FB125A4149A00F13866 /* Karla-Regular.ttf in Resources */,
 				51C1D4DD25998B9B009D673F /* BubblegumSans-Regular.ttf in Resources */,
 				51AF3AB325986C74000FC848 /* Assets.xcassets in Resources */,
-				5645B3055D3B471C8E239A24 /* amplifyconfiguration.json in Resources */,
-				E70DC29D73844073883FA95D /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BCDCB750AD55E4F985A3BB79 /* [CP] Embed Pods Frameworks */ = {
+		94B1DC428A1A3ADD43885F50 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -339,7 +286,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Omakase/Pods-Omakase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CFB9713925C5859347BCAAF7 /* [CP] Check Pods Manifest.lock */ = {
+		C3459F03D898EC1BE5E87BE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -389,11 +336,6 @@
 				510C0FD425A4430500F13866 /* Group+CoreDataProperties.swift in Sources */,
 				51AF3AA925986C70000FC848 /* SceneDelegate.swift in Sources */,
 				51D2509125999A1B00DFF18B /* LoginTextField.swift in Sources */,
-				1FFBC54042E845FB95692935 /* AmplifyFriend.swift in Sources */,
-				AB0916E7A0394C9D8968AD62 /* AmplifyFriend+Schema.swift in Sources */,
-				8D9E4A52DC784573A8630925 /* AmplifyGroup.swift in Sources */,
-				8D0EC4EFD63A4C648F14420B /* AmplifyGroup+Schema.swift in Sources */,
-				A57A90A553A14490B4D20D82 /* AmplifyModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +471,7 @@
 		};
 		51AF3ABB25986C74000FC848 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B6FF0D626752F4CC6961E0D /* Pods-Omakase.debug.xcconfig */;
+			baseConfigurationReference = 949790BB144B52814D20532D /* Pods-Omakase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -549,7 +491,7 @@
 		};
 		51AF3ABC25986C74000FC848 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAD970204709104EE61F2E2 /* Pods-Omakase.release.xcconfig */;
+			baseConfigurationReference = 20C98AC96606B0E6E7DFD03C /* Pods-Omakase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
