@@ -19,6 +19,7 @@
 		510C0FD425A4430500F13866 /* Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0FD025A4430500F13866 /* Group+CoreDataProperties.swift */; };
 		51808C3E259AF4EC00D4B015 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51808C3D259AF4EC00D4B015 /* OTPViewController.swift */; };
 		51808C5E259AF7FB00D4B015 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51808C5D259AF7FB00D4B015 /* GroupsViewController.swift */; };
+		51A8D01C25B3E575003227CD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8D01B25B3E575003227CD /* OnboardingViewController.swift */; };
 		51AF3AA725986C70000FC848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF3AA625986C70000FC848 /* AppDelegate.swift */; };
 		51AF3AA925986C70000FC848 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF3AA825986C70000FC848 /* SceneDelegate.swift */; };
 		51AF3AB125986C71000FC848 /* Omakase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51AF3AAF25986C71000FC848 /* Omakase.xcdatamodeld */; };
@@ -50,6 +51,7 @@
 		510C0FD025A4430500F13866 /* Group+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		51808C3D259AF4EC00D4B015 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		51808C5D259AF7FB00D4B015 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		51A8D01B25B3E575003227CD /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		51AF3AA325986C70000FC848 /* Omakase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Omakase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AF3AA625986C70000FC848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51AF3AA825986C70000FC848 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		51C1D4CE2599869F009D673F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				51A8D01B25B3E575003227CD /* OnboardingViewController.swift */,
 				51C1D4C325998607009D673F /* LoginViewController.swift */,
 				51808C3D259AF4EC00D4B015 /* OTPViewController.swift */,
 				51808C5D259AF7FB00D4B015 /* GroupsViewController.swift */,
@@ -324,6 +327,7 @@
 				510C0FC325A4262D00F13866 /* UICollectionViewFlowLayout+StretchyHeader.swift in Sources */,
 				510C0FC025A422A100F13866 /* GroupsReusableHeaderView.swift in Sources */,
 				51C1D4D625998884009D673F /* UIColor+Extensions.swift in Sources */,
+				51A8D01C25B3E575003227CD /* OnboardingViewController.swift in Sources */,
 				51C1D4C425998607009D673F /* LoginViewController.swift in Sources */,
 				51D2509B2599A4C200DFF18B /* RectangleButton.swift in Sources */,
 				510C0FD225A4430500F13866 /* Friend+CoreDataProperties.swift in Sources */,

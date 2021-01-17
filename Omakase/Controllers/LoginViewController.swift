@@ -10,40 +10,22 @@ import SnapKit
 
 class LoginViewController: UIViewController, UITextViewDelegate {
     
+    enum Config {
+        case signup, login
+    }
+    
     // MARK: Subviews
-    private lazy var logoImageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "Omakase Logo"))
-        return imageView
-    }()
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Omakase"
-        label.font = UIFont.bubblegumSans
-        label.textColor = UIColor.omakaseBlack
-        label.textAlignment = .center
-        return label
-    }()
-    
-    private lazy var subtitleLabel: UILabel = {
-        let label = UILabel()
-        label.text = "where to eat. made simple"
-        label.font = UIFont.karlaBold.withSize(18.adjustedHeight)
-        label.textColor = UIColor.omakaseDarkGray
-        label.textAlignment = .center
-        return label
-    }()
-    
-    private lazy var signupLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Sign Up"
+        label.text = config == .signup ? "Sign Up" : "Log In"
         label.font = UIFont.karlaBold.withSize(28.adjustedHeight)
         label.textColor = UIColor.omakaseBlack
         label.textAlignment = .left
         return label
     }()
     
-    private lazy var signupSublabel: UILabel = {
+    private lazy var subtitleLabel: UILabel = {
         let label = UILabel()
         label.text = "let's get you eating, asap."
         label.font = UIFont.karlaBold.withSize(17.adjustedHeight)
@@ -70,7 +52,8 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     }()
     
     private lazy var signupButton: RectangleButton = {
-        let button = RectangleButton(title: "Sign Up", color: .omakaseBeige, fontSize: 17.adjustedHeight) {
+        let buttonTitle = config == .signup ? "Sign Up" : "Log In"
+        let button = RectangleButton(title: buttonTitle, color: .omakaseBeige, fontSize: 17.adjustedHeight) {
             self.signupButtonPressed()
         }
         return button
@@ -81,17 +64,18 @@ class LoginViewController: UIViewController, UITextViewDelegate {
         textView.delegate = self
         textView.backgroundColor = .clear
         textView.textAlignment = .center
-        textView.isEditable = false 
+        textView.isEditable = false
+//        textView.isSelectable = false
         
-        let linkRange = NSRange(location: 17, length: 6)
-        let attributedString = NSMutableAttributedString(string: "Have an account? Log in")
+        let linkRange = NSRange(location: 17, length: config == .signup ? 6 : 7)
+        let attributedString = NSMutableAttributedString(string: "\(config == .signup ? "Have" : "Need") an account? \(config == .signup ? "Log In" : "Sign Up")")
         let pstyle = NSMutableParagraphStyle()
         pstyle.alignment = .center
-        attributedString.addAttribute(.link, value: "omakase://iosapp/login/", range: linkRange)
+        attributedString.addAttribute(.link, value: "omakase://iosapp/onboarding/", range: linkRange)
         attributedString.addAttribute(.foregroundColor, value: UIColor.omakaseBlack, range: NSRange(location:0, length: 17))
         attributedString.addAttribute(.foregroundColor, value: UIColor.hyperlinkBlue, range: linkRange)
-        attributedString.addAttribute(.font, value: UIFont.karlaBold.withSize(15.adjustedHeight), range: NSRange(location: 0, length: 23))
-        attributedString.addAttribute(.paragraphStyle, value: pstyle, range: NSRange(location: 0, length: 23))
+        attributedString.addAttribute(.font, value: UIFont.karlaBold.withSize(15.adjustedHeight), range: NSRange(location: 0, length: config == .signup ? 23 : 24))
+        attributedString.addAttribute(.paragraphStyle, value: pstyle, range: NSRange(location: 0, length: config == .signup ? 23 : 24))
         
         textView.attributedText = attributedString
         return textView
@@ -99,16 +83,24 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     
     // MARK: Init & Layout
     
+    private var config: Config
+    
+    init(with config: Config) {
+        self.config = config
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         navigationController?.isNavigationBarHidden = true
         let subviews = [
-            logoImageView,
             titleLabel,
             subtitleLabel,
-            signupLabel,
-            signupSublabel,
             phoneField,
             orLabel,
             emailField,
@@ -121,53 +113,45 @@ class LoginViewController: UIViewController, UITextViewDelegate {
         setConstraints()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        phoneField.becomeFirstResponder()
+    }
+    
     private func setConstraints() {
         let leadingOffset: CGFloat = 45.adjustedWidth
-        logoImageView.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(31.adjustedTopOffset)
-            make.centerX.equalToSuperview()
-            make.height.width.equalTo(200.adjustedHeight)
-        }
         titleLabel.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(197.adjustedTopOffset)
-            make.centerX.equalToSuperview()
-        }
-        subtitleLabel.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(271.adjustedTopOffset)
-            make.centerX.equalToSuperview()
-        }
-        signupLabel.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(437.adjustedTopOffset)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(130.adjustedTopOffset)
             make.leading.equalToSuperview().offset(leadingOffset)
         }
-        signupSublabel.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(480.adjustedTopOffset)
+        subtitleLabel.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel).offset(43.adjustedHeight)
             make.leading.equalToSuperview().offset(leadingOffset)
         }
         phoneField.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(533.adjustedTopOffset)
+            make.top.equalTo(subtitleLabel).offset(53.adjustedHeight)
             make.centerX.equalToSuperview()
             make.height.equalTo(50.adjustedHeight)
             make.width.equalTo(300.adjustedWidth)
         }
         orLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(591.adjustedTopOffset)
+            make.top.equalTo(phoneField).offset(58.adjustedHeight)
         }
         emailField.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(617.adjustedTopOffset)
+            make.top.equalTo(orLabel).offset(26.adjustedHeight)
             make.centerX.equalToSuperview()
             make.height.equalTo(50.adjustedHeight)
             make.width.equalTo(300.adjustedWidth)
         }
         signupButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(695.adjustedTopOffset)
+            make.top.equalTo(emailField).offset(78.adjustedHeight)
             make.height.equalTo(50.adjustedHeight)
             make.width.equalTo(300.adjustedWidth)
         }
         loginTextView.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(761.adjustedTopOffset)
+            make.top.equalTo(signupButton).offset(66.adjustedHeight)
             make.width.equalToSuperview()
             make.height.equalTo(50.adjustedHeight)
             make.centerX.equalToSuperview()
@@ -176,14 +160,15 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     
     // MARK: Actions
     private func signupButtonPressed() {
-        print("signupButton pressed")
+        navigationController?.pushViewController(OTPViewController(), animated: true)
     }
     
-    private func loginButtonPressed() {
-        print("loginButton pressed")
+    private func loginAttributedTextPressed() {
+        navigationController?.popViewController(animated: true)
     }
     
     // MARK: UITextViewDelegate
+    
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
         guard let components = NSURLComponents(url: URL, resolvingAgainstBaseURL: true),
               let path = components.path,
@@ -192,9 +177,13 @@ class LoginViewController: UIViewController, UITextViewDelegate {
             return false
         }
 
-        if path == "/login/" {
-            loginButtonPressed()
+        switch path {
+        case "/onboarding/":
+            print("path pressed: \(path)")
+            loginAttributedTextPressed()
             return true
+        default:
+            print("invalid path: \(path)")
         }
         return false
     }
