@@ -18,7 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            let rootVC = OnboardingViewController()
+            window.overrideUserInterfaceStyle = .light
+            let rootVC = OTPViewController(phoneNumber: "123-444-5555")
             window.rootViewController = UINavigationController(rootViewController: rootVC)
             self.window = window
             window.makeKeyAndVisible()

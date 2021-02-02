@@ -19,6 +19,7 @@
 		510C0FD425A4430500F13866 /* Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0FD025A4430500F13866 /* Group+CoreDataProperties.swift */; };
 		51808C3E259AF4EC00D4B015 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51808C3D259AF4EC00D4B015 /* OTPViewController.swift */; };
 		51808C5E259AF7FB00D4B015 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51808C5D259AF7FB00D4B015 /* GroupsViewController.swift */; };
+		5193D9FB25C8A7A50080F02A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5193D9FA25C8A7A50080F02A /* String+Extensions.swift */; };
 		51A8D01C25B3E575003227CD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8D01B25B3E575003227CD /* OnboardingViewController.swift */; };
 		51AF3AA725986C70000FC848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF3AA625986C70000FC848 /* AppDelegate.swift */; };
 		51AF3AA925986C70000FC848 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF3AA825986C70000FC848 /* SceneDelegate.swift */; };
@@ -51,6 +52,7 @@
 		510C0FD025A4430500F13866 /* Group+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		51808C3D259AF4EC00D4B015 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		51808C5D259AF7FB00D4B015 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		5193D9FA25C8A7A50080F02A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		51A8D01B25B3E575003227CD /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		51AF3AA325986C70000FC848 /* Omakase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Omakase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AF3AA625986C70000FC848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				51C1D4D525998884009D673F /* UIColor+Extensions.swift */,
 				51C1D4DF25998C2E009D673F /* UIFont+Extensions.swift */,
 				510C0FC225A4262D00F13866 /* UICollectionViewFlowLayout+StretchyHeader.swift */,
+				5193D9FA25C8A7A50080F02A /* String+Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				510C0FD325A4430500F13866 /* Group+CoreDataClass.swift in Sources */,
 				5101D4D825A44B9200EDA380 /* FriendPhotoCollectionViewCell.swift in Sources */,
 				51C1D4E025998C2E009D673F /* UIFont+Extensions.swift in Sources */,
+				5193D9FB25C8A7A50080F02A /* String+Extensions.swift in Sources */,
 				510C0FD425A4430500F13866 /* Group+CoreDataProperties.swift in Sources */,
 				51AF3AA925986C70000FC848 /* SceneDelegate.swift in Sources */,
 				51D2509125999A1B00DFF18B /* LoginTextField.swift in Sources */,

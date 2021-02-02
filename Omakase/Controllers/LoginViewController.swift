@@ -160,7 +160,7 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     
     // MARK: Actions
     private func signupButtonPressed() {
-        navigationController?.pushViewController(OTPViewController(), animated: true)
+        navigationController?.pushViewController(OTPViewController(phoneNumber: "123-444-5555"), animated: true)
     }
     
     private func loginAttributedTextPressed() {
