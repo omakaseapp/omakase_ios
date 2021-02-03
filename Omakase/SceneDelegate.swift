@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.overrideUserInterfaceStyle = .light
-            let rootVC = OTPViewController(phoneNumber: "123-444-5555")
+//            let rootVC = OTPViewController(phoneNumber: "123-444-5555")
+            let rootVC = OnboardingViewController()
             window.rootViewController = UINavigationController(rootViewController: rootVC)
             self.window = window
             window.makeKeyAndVisible()

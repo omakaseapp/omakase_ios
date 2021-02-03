@@ -38,19 +38,6 @@ class LoginViewController: UIViewController, UITextViewDelegate {
         return LoginTextField(config: .phone)
     }()
     
-    private lazy var orLabel: UILabel = {
-        let label = UILabel()
-        label.text = "OR"
-        label.font = UIFont.karlaBold.withSize(17.adjustedHeight)
-        label.textColor = UIColor.omakaseSalmon
-        label.textAlignment = .center
-        return label
-    }()
-    
-    private lazy var emailField: LoginTextField = {
-        return LoginTextField(config: .email)
-    }()
-    
     private lazy var signupButton: RectangleButton = {
         let buttonTitle = config == .signup ? "Sign Up" : "Log In"
         let button = RectangleButton(title: buttonTitle, color: .omakaseBeige, fontSize: 17.adjustedHeight) {
@@ -102,8 +89,6 @@ class LoginViewController: UIViewController, UITextViewDelegate {
             titleLabel,
             subtitleLabel,
             phoneField,
-            orLabel,
-            emailField,
             signupButton,
             loginTextView
         ]
@@ -121,7 +106,7 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     private func setConstraints() {
         let leadingOffset: CGFloat = 45.adjustedWidth
         titleLabel.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(130.adjustedTopOffset)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(162.adjustedTopOffset)
             make.leading.equalToSuperview().offset(leadingOffset)
         }
         subtitleLabel.snp.makeConstraints { make in
@@ -134,19 +119,9 @@ class LoginViewController: UIViewController, UITextViewDelegate {
             make.height.equalTo(50.adjustedHeight)
             make.width.equalTo(300.adjustedWidth)
         }
-        orLabel.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(phoneField).offset(58.adjustedHeight)
-        }
-        emailField.snp.makeConstraints { make in
-            make.top.equalTo(orLabel).offset(26.adjustedHeight)
-            make.centerX.equalToSuperview()
-            make.height.equalTo(50.adjustedHeight)
-            make.width.equalTo(300.adjustedWidth)
-        }
         signupButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(emailField).offset(78.adjustedHeight)
+            make.top.equalTo(phoneField).offset(83.adjustedHeight)
             make.height.equalTo(50.adjustedHeight)
             make.width.equalTo(300.adjustedWidth)
         }
