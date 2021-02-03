@@ -20,6 +20,7 @@
 		51808C3E259AF4EC00D4B015 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51808C3D259AF4EC00D4B015 /* OTPViewController.swift */; };
 		51808C5E259AF7FB00D4B015 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51808C5D259AF7FB00D4B015 /* GroupsViewController.swift */; };
 		5193D9FB25C8A7A50080F02A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5193D9FA25C8A7A50080F02A /* String+Extensions.swift */; };
+		5193D9FE25CA5F4F0080F02A /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5193D9FD25CA5F4F0080F02A /* OTPTextField.swift */; };
 		51A8D01C25B3E575003227CD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8D01B25B3E575003227CD /* OnboardingViewController.swift */; };
 		51AF3AA725986C70000FC848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF3AA625986C70000FC848 /* AppDelegate.swift */; };
 		51AF3AA925986C70000FC848 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF3AA825986C70000FC848 /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 		51808C3D259AF4EC00D4B015 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		51808C5D259AF7FB00D4B015 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		5193D9FA25C8A7A50080F02A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		5193D9FD25CA5F4F0080F02A /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 		51A8D01B25B3E575003227CD /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		51AF3AA325986C70000FC848 /* Omakase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Omakase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AF3AA625986C70000FC848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				51D2509025999A1B00DFF18B /* LoginTextField.swift */,
 				51D2509A2599A4C200DFF18B /* RectangleButton.swift */,
 				510C0FBF25A422A100F13866 /* GroupsReusableHeaderView.swift */,
+				5193D9FD25CA5F4F0080F02A /* OTPTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				51C1D4BB2599851F009D673F /* Int+Extensions.swift in Sources */,
 				51C1D4B8259983A7009D673F /* Constants.swift in Sources */,
 				510C0FD325A4430500F13866 /* Group+CoreDataClass.swift in Sources */,
+				5193D9FE25CA5F4F0080F02A /* OTPTextField.swift in Sources */,
 				5101D4D825A44B9200EDA380 /* FriendPhotoCollectionViewCell.swift in Sources */,
 				51C1D4E025998C2E009D673F /* UIFont+Extensions.swift in Sources */,
 				5193D9FB25C8A7A50080F02A /* String+Extensions.swift in Sources */,

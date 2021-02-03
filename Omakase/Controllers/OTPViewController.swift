@@ -39,7 +39,10 @@ class OTPViewController: UIViewController {
         return button
     }()
     
-//    private lazy var otpTextField:
+    private lazy var otpTextField: OTPTextField = {
+        let textField = OTPTextField()
+        return textField
+    }()
     
     private lazy var codeExpirationCountdownLabel: UILabel = {
         let label = UILabel()
@@ -73,6 +76,7 @@ class OTPViewController: UIViewController {
         let subviews = [
             titleLabel,
             resendCodeButton,
+            otpTextField,
             codeExpirationCountdownLabel
         ]
         for subview in subviews { view.addSubview(subview) }
@@ -83,6 +87,7 @@ class OTPViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         resendCodeButtonPressed()
+        _ = otpTextField.becomeFirstResponder()
     }
     
     private func setConstraints() {
@@ -96,6 +101,11 @@ class OTPViewController: UIViewController {
             make.leading.equalToSuperview().offset(leadingOffset)
             make.height.equalTo(42.adjustedHeight)
             make.width.equalTo(142.adjustedWidth)
+        }
+        otpTextField.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview().inset(leadingOffset)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(366.adjustedTopOffset)
+            make.height.equalTo(55.adjustedHeight)
         }
         codeExpirationCountdownLabel.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(447.adjustedTopOffset)

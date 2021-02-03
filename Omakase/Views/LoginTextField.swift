@@ -30,6 +30,7 @@ class LoginTextField: UIView {
             UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneButtonAction))
         ]
         field.inputAccessoryView = toolbar
+        
         if config == .phone {
             field.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
         }
