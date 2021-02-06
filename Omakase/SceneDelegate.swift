@@ -21,6 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.overrideUserInterfaceStyle = .light
 //            let rootVC = OTPViewController(phoneNumber: "123-444-5555")
             let rootVC = OnboardingViewController()
+//            let rootVC = GroupsViewController()
             window.rootViewController = UINavigationController(rootViewController: rootVC)
             self.window = window
             window.makeKeyAndVisible()

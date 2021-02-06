@@ -100,7 +100,7 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        phoneField.becomeFirstResponder()
+        _ = phoneField.becomeFirstResponder()
     }
     
     private func setConstraints() {

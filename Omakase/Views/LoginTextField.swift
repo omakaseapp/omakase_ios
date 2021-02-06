@@ -79,6 +79,11 @@ class LoginTextField: UIView {
     }
     
     // MARK: Actions
+    override func becomeFirstResponder() -> Bool {
+        _ = textField.becomeFirstResponder()
+        return true
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if !textField.isFirstResponder {
             textField.becomeFirstResponder()

@@ -8,6 +8,7 @@ target 'Omakase' do
   # Pods for Omakase
   pod 'SnapKit'
   pod 'PhoneNumberKit'
+  pod 'Firebase/Analytics'
 
 end
 
