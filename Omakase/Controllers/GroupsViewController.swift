@@ -16,7 +16,7 @@ class GroupsViewController: UIViewController {
         let layout = UICollectionViewFlowLayoutWithStretchyHeader()
         layout.scrollDirection = .vertical
         layout.minimumInteritemSpacing = 15.adjustedHeight
-        layout.itemSize = CGSize(width: 343.adjustedWidth, height: 146.adjustedHeight)
+        layout.itemSize = CGSize(width: 343.adjustedWidth, height: 155.adjustedHeight)
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.allowsSelection = false
@@ -39,7 +39,6 @@ class GroupsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.isNavigationBarHidden = true
         view.backgroundColor = .white
         view.addSubview(groupsCollectionView)
         setConstraints()
@@ -104,7 +103,7 @@ class GroupsViewController: UIViewController {
         // create a Group object
         let newGroup = Group(context: self.context)
         newGroup.name = "New Group"
-        newGroup.emoji = "🤡"
+        newGroup.emoji = "🍆"
         newGroup.members = NSOrderedSet(array: getAllFriends())
         // save data
         do {
@@ -168,5 +167,9 @@ extension GroupsViewController: UICollectionViewDataSource, UICollectionViewDele
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: view.frame.size.width, height: 155.adjustedTopOffset)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: HomeTabBarController.tabBarItemVerticalOffset, right: 0)
     }
 }

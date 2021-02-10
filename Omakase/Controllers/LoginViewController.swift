@@ -84,7 +84,6 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        navigationController?.isNavigationBarHidden = true
         let subviews = [
             titleLabel,
             subtitleLabel,

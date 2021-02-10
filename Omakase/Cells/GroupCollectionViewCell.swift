@@ -81,7 +81,9 @@ class GroupCollectionViewCell: UICollectionViewCell {
         layer.shadowRadius = 15.adjustedHeight
         layer.shadowOpacity = 0.1
         layer.masksToBounds = false
-        layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
+        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
+        layer.shouldRasterize = true
+        layer.rasterizationScale = UIScreen.main.scale
 
         for subview in [
             emojiLabel,

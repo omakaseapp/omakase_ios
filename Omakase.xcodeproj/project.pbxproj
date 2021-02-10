@@ -17,6 +17,12 @@
 		510C0FD225A4430500F13866 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0FCE25A4430500F13866 /* Friend+CoreDataProperties.swift */; };
 		510C0FD325A4430500F13866 /* Group+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0FCF25A4430500F13866 /* Group+CoreDataClass.swift */; };
 		510C0FD425A4430500F13866 /* Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0FD025A4430500F13866 /* Group+CoreDataProperties.swift */; };
+		51346F0D25D0942F002C5217 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51346F0C25D0942F002C5217 /* HomeTabBarController.swift */; };
+		51346F1025D096A3002C5217 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51346F0F25D096A3002C5217 /* PreferencesViewController.swift */; };
+		51346F1325D09AE5002C5217 /* PreferencesReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51346F1225D09AE5002C5217 /* PreferencesReusableHeaderView.swift */; };
+		51346F1625D0A442002C5217 /* PreferenceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51346F1525D0A442002C5217 /* PreferenceCollectionViewCell.swift */; };
+		51346F1925D0AA1D002C5217 /* PreferencesSectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51346F1825D0AA1D002C5217 /* PreferencesSectionReusableView.swift */; };
+		517CB0A425D463B100D7A8F3 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CB0A325D463B100D7A8F3 /* UIImage+Extensions.swift */; };
 		51808C3E259AF4EC00D4B015 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51808C3D259AF4EC00D4B015 /* OTPViewController.swift */; };
 		51808C5E259AF7FB00D4B015 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51808C5D259AF7FB00D4B015 /* GroupsViewController.swift */; };
 		5193D9FB25C8A7A50080F02A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5193D9FA25C8A7A50080F02A /* String+Extensions.swift */; };
@@ -52,6 +58,12 @@
 		510C0FCE25A4430500F13866 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		510C0FCF25A4430500F13866 /* Group+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		510C0FD025A4430500F13866 /* Group+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		51346F0C25D0942F002C5217 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		51346F0F25D096A3002C5217 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		51346F1225D09AE5002C5217 /* PreferencesReusableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesReusableHeaderView.swift; sourceTree = "<group>"; };
+		51346F1525D0A442002C5217 /* PreferenceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceCollectionViewCell.swift; sourceTree = "<group>"; };
+		51346F1825D0AA1D002C5217 /* PreferencesSectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesSectionReusableView.swift; sourceTree = "<group>"; };
+		517CB0A325D463B100D7A8F3 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		51808C3D259AF4EC00D4B015 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		51808C5D259AF7FB00D4B015 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		5193D9FA25C8A7A50080F02A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -104,6 +116,7 @@
 			children = (
 				510C0FAD25A4102400F13866 /* GroupCollectionViewCell.swift */,
 				5101D4D725A44B9200EDA380 /* FriendPhotoCollectionViewCell.swift */,
+				51346F1525D0A442002C5217 /* PreferenceCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -167,6 +180,7 @@
 				51C1D4DF25998C2E009D673F /* UIFont+Extensions.swift */,
 				510C0FC225A4262D00F13866 /* UICollectionViewFlowLayout+StretchyHeader.swift */,
 				5193D9FA25C8A7A50080F02A /* String+Extensions.swift */,
+				517CB0A325D463B100D7A8F3 /* UIImage+Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -178,6 +192,8 @@
 				51C1D4C325998607009D673F /* LoginViewController.swift */,
 				51808C3D259AF4EC00D4B015 /* OTPViewController.swift */,
 				51808C5D259AF7FB00D4B015 /* GroupsViewController.swift */,
+				51346F0C25D0942F002C5217 /* HomeTabBarController.swift */,
+				51346F0F25D096A3002C5217 /* PreferencesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,6 +215,8 @@
 				51D2509A2599A4C200DFF18B /* RectangleButton.swift */,
 				510C0FBF25A422A100F13866 /* GroupsReusableHeaderView.swift */,
 				5193D9FD25CA5F4F0080F02A /* OTPTextField.swift */,
+				51346F1225D09AE5002C5217 /* PreferencesReusableHeaderView.swift */,
+				51346F1825D0AA1D002C5217 /* PreferencesSectionReusableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,13 +348,17 @@
 			files = (
 				51808C5E259AF7FB00D4B015 /* GroupsViewController.swift in Sources */,
 				510C0FD125A4430500F13866 /* Friend+CoreDataClass.swift in Sources */,
+				51346F1325D09AE5002C5217 /* PreferencesReusableHeaderView.swift in Sources */,
 				51C1D4B425998321009D673F /* CGFloat+Extensions.swift in Sources */,
 				51AF3AB125986C71000FC848 /* Omakase.xcdatamodeld in Sources */,
+				51346F0D25D0942F002C5217 /* HomeTabBarController.swift in Sources */,
 				51808C3E259AF4EC00D4B015 /* OTPViewController.swift in Sources */,
 				51AF3AA725986C70000FC848 /* AppDelegate.swift in Sources */,
+				51346F1925D0AA1D002C5217 /* PreferencesSectionReusableView.swift in Sources */,
 				510C0FC325A4262D00F13866 /* UICollectionViewFlowLayout+StretchyHeader.swift in Sources */,
 				510C0FC025A422A100F13866 /* GroupsReusableHeaderView.swift in Sources */,
 				51C1D4D625998884009D673F /* UIColor+Extensions.swift in Sources */,
+				51346F1625D0A442002C5217 /* PreferenceCollectionViewCell.swift in Sources */,
 				51A8D01C25B3E575003227CD /* OnboardingViewController.swift in Sources */,
 				51C1D4C425998607009D673F /* LoginViewController.swift in Sources */,
 				51D2509B2599A4C200DFF18B /* RectangleButton.swift in Sources */,
@@ -348,8 +370,10 @@
 				5193D9FE25CA5F4F0080F02A /* OTPTextField.swift in Sources */,
 				5101D4D825A44B9200EDA380 /* FriendPhotoCollectionViewCell.swift in Sources */,
 				51C1D4E025998C2E009D673F /* UIFont+Extensions.swift in Sources */,
+				51346F1025D096A3002C5217 /* PreferencesViewController.swift in Sources */,
 				5193D9FB25C8A7A50080F02A /* String+Extensions.swift in Sources */,
 				510C0FD425A4430500F13866 /* Group+CoreDataProperties.swift in Sources */,
+				517CB0A425D463B100D7A8F3 /* UIImage+Extensions.swift in Sources */,
 				51AF3AA925986C70000FC848 /* SceneDelegate.swift in Sources */,
 				51D2509125999A1B00DFF18B /* LoginTextField.swift in Sources */,
 			);

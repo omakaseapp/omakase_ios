@@ -19,4 +19,8 @@ extension Int {
     var adjustedTopOffset: CGFloat {
         return self.adjustedHeight - Constants.topInset
     }
+    
+    var adjustedTabBarHeight: CGFloat {
+        return self.adjustedHeight + Constants.bottomInset
+    }
 }

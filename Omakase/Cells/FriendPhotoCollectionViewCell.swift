@@ -21,8 +21,6 @@ class FriendPhotoCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        layer.borderWidth = 1
-        layer.borderColor = UIColor.red.cgColor
         layer.cornerRadius = 15.adjustedHeight
         layer.masksToBounds = true
         backgroundView = imageView
@@ -35,7 +33,4 @@ class FriendPhotoCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
-    
 }

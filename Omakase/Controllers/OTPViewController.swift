@@ -71,7 +71,6 @@ class OTPViewController: UIViewController {
     
     override func viewDidLoad() {
         view.backgroundColor = .white
-        navigationController?.setNavigationBarHidden(true, animated: false)
         super.viewDidLoad()
         let subviews = [
             titleLabel,

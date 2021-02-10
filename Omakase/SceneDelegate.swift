@@ -19,10 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.overrideUserInterfaceStyle = .light
-//            let rootVC = OTPViewController(phoneNumber: "123-444-5555")
-            let rootVC = OnboardingViewController()
-//            let rootVC = GroupsViewController()
-            window.rootViewController = UINavigationController(rootViewController: rootVC)
+            window.rootViewController = {
+                let navController = UINavigationController(
+                    rootViewController: HomeTabBarController()
+                )
+                navController.setNavigationBarHidden(true, animated: false)
+                return navController
+            }()
             self.window = window
             window.makeKeyAndVisible()
         }
