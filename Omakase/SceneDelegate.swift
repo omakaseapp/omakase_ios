@@ -21,7 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.overrideUserInterfaceStyle = .light
             window.rootViewController = {
                 let navController = UINavigationController(
-                    rootViewController: HomeTabBarController()
+//                    rootViewController: HomeTabBarController()
+                    rootViewController: OnboardingViewController()
                 )
                 navController.setNavigationBarHidden(true, animated: false)
                 return navController

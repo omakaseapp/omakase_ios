@@ -43,6 +43,7 @@ class GroupsViewController: UIViewController {
         view.addSubview(groupsCollectionView)
         setConstraints()
         fetchGroups()
+//        createFriends()
     }
     
     private func setConstraints() {
