@@ -43,7 +43,7 @@ class GroupsViewController: UIViewController {
         view.addSubview(groupsCollectionView)
         setConstraints()
         fetchGroups()
-//        createFriends()
+        createFriends()
     }
     
     private func setConstraints() {
@@ -104,7 +104,7 @@ class GroupsViewController: UIViewController {
         // create a Group object
         let newGroup = Group(context: self.context)
         newGroup.name = "New Group"
-        newGroup.emoji = "🍆"
+        newGroup.emoji = "🤤"
         newGroup.members = NSOrderedSet(array: getAllFriends())
         // save data
         do {
